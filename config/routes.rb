@@ -1,4 +1,10 @@
 AwesomeMenus::Application.routes.draw do
+
+  root to: 'menus#index'
+
+  resources :menus, only: [:index, :create]
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
