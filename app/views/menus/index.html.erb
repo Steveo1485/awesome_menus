@@ -4,4 +4,9 @@
   <%= f.text_field :name, placeholder: 'name' %>
   <%= f.submit "submit" %>
 <% end %>
-<%= render "menu_created" %>
+
+<ul class="menu-list">
+<% @menu_list.each do |current_menu_in_database| %>
+  <%= render "menu_created", menu_name: current_menu_in_database.name %>
+<% end %>
+</ul>
