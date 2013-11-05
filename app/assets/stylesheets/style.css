@@ -1,0 +1,26 @@
+#title-block {
+	background-color: #00B2AA;
+	width: 100%;
+	margin: 0px;
+}
+
+h1#title {
+	font-family: 'Contrail One', cursive;
+	padding-left: 10px;	
+}
+
+h2#menu-list {
+	font-family: 'Contrail One', cursive;
+	color: #005753;	
+	text-decoration: underline;
+	margin-bottom: 0px;
+}
+
+ul.menu-list {
+	margin-top: 2px;
+	list-style: none;
+}
+
+a.menu-details {
+	margin-left: 10px;
+}

@@ -1,10 +1,11 @@
-<h1>Awesome Menus</h1>
+<div id="title-block"><h1 id="title">Awesome Menus</h1></div>
 
-<%= form_for @menu, url: {action: "create"}, html: {class: "form-create-menu"} do |f| %>
-  <%= f.text_field :name, placeholder: 'name' %>
-  <%= f.submit "submit" %>
+<%= form_for @menu, url: {action: "create"}, html: {class: "form-create-menu", remote: true} do |f| %>
+  <%= f.text_field :name, placeholder: 'Menu Name' %>
+  <%= f.submit "Add Menu" %>
 <% end %>
 
+<h2 id="menu-list">Menus</h2>
 <ul class="menu-list">
 <% @menu_list.each do |current_menu_in_database| %>
   <%= render "menu_created", menu_name: current_menu_in_database.name %>
