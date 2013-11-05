@@ -1,6 +1,6 @@
 <h1>Awesome Menus</h1>
 
-<%= form_for @menu, url: {action: "create"}, html: {class: "form-create-menu"} do |f| %>
+<%= form_for @menu, url: {action: "create"}, html: {class: "form-create-menu", remote: true} do |f| %>
   <%= f.text_field :name, placeholder: 'name' %>
   <%= f.submit "submit" %>
 <% end %>
